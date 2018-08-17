@@ -1,0 +1,5 @@
+C:\Users\CETECOM\Desktop\MySite\Negocio\bin\Debug\Negocio.exe.config
+C:\Users\CETECOM\Desktop\MySite\Negocio\bin\Debug\Negocio.exe
+C:\Users\CETECOM\Desktop\MySite\Negocio\bin\Debug\Negocio.pdb
+C:\Users\CETECOM\Desktop\MySite\Negocio\obj\Debug\Negocio.exe
+C:\Users\CETECOM\Desktop\MySite\Negocio\obj\Debug\Negocio.pdb
