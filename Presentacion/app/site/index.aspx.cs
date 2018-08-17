@@ -30,9 +30,10 @@ namespace Presentacion.app.site
             }
             catch (BusinessException ex)
             {
-                lbl_message_error.Enabled = true;
+               
                 lbl_message_error.Text = ex.Message;
                 lbl_message_error.CssClass = "message-error";
+                lbl_message_error.Enabled = true;
             }
            
         }
