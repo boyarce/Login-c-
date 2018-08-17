@@ -25,6 +25,7 @@ namespace Presentacion.app.site
             LoginBusiness login = new LoginBusinessImpl();
             try
             {
+                lbl_message_error.Enabled = true;
                 login.autentication(txt_username.Text, txt_pass.Text);
                 Response.Redirect("home.aspx");
             }
@@ -33,7 +34,7 @@ namespace Presentacion.app.site
                
                 lbl_message_error.Text = ex.Message;
                 lbl_message_error.CssClass = "message-error";
-                lbl_message_error.Enabled = true;
+                
             }
            
         }
