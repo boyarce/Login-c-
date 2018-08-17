@@ -15,7 +15,7 @@ namespace Persistencia.dao.impl
                 return true;
             }
             else {
-                return false
+                return false;
             }
         }
     }

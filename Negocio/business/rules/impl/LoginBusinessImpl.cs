@@ -1,4 +1,5 @@
-﻿using Persistencia.dao.impl;
+﻿using Negocio.business.exception;
+using Persistencia.dao.impl;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,11 @@ namespace Negocio.business.rules.impl
     {
         public void autentication(string user, string pass)
         {
-            UserDAO dao = new UserDAOImpl()            
+            UserDAO dao = new UserDAOImpl();
+            if(dao.autentication(user, pass)){
+                throw new BusinessException(
+                    "USUARIO O CONTRASEÑA INVALIDO");
+            }
         }
     }
 }

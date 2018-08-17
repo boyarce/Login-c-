@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Negocio.business.exception;
+using Negocio.business.rules;
+using Negocio.business.rules.impl;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -18,16 +21,20 @@ namespace Presentacion.app.site
 
         protected void btn_login_Click(object sender, EventArgs e)
         {
-            if (txt_username.Text.Equals(txt_pass.Text))
+
+            LoginBusiness login = new LoginBusinessImpl();
+            try
             {
+                login.autentication(txt_username.Text, txt_pass.Text);
                 Response.Redirect("home.aspx");
             }
-            else {
+            catch (BusinessException ex)
+            {
                 lbl_message_error.Enabled = true;
-                lbl_message_error.Text = "USUARIO Y CONTRASEÑA INVALIDOS"; 
+                lbl_message_error.Text = ex.Message;
+                lbl_message_error.CssClass = "message-error";
             }
-            
-            //Server.Transfer("home.aspx", true);
+           
         }
     }
 }

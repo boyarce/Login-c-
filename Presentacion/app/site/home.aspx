@@ -11,7 +11,7 @@
     <form id="form1" runat="server">
     <div class="container">
         <div class="row">
-            <img src="http://www.tecknoshoes.cl/imagenes/construccion.jpg" alt="La casa del rock" width="100%" height="700">
+            <img src="http://www.tecknoshoes.cl/imagenes/construccion.jpg" alt="La casa del rock" width="100" height="700"/>
         </div>
     </div>
     </form>

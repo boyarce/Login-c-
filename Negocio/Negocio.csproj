@@ -44,6 +44,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="business\exception\BusinessException.cs" />
+    <Compile Include="business\rules\impl\LoginBusinessImpl.cs" />
     <Compile Include="business\rules\LoginBusiness.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -53,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="business\rules\generic\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Persistencia\Persistencia.csproj">
+      <Project>{78BD8A29-77EE-4FE0-B3DA-142BC8332936}</Project>
+      <Name>Persistencia</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
